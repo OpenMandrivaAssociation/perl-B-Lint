@@ -15,6 +15,7 @@ BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Pluggable)
 BuildRequires: perl(Test::More)
+Requires:   perl-devel
 
 BuildArch: noarch
 

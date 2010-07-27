@@ -1,9 +1,9 @@
 %define upstream_name    B-Lint
-%define upstream_version 1.11
+%define upstream_version 1.12
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Adds debugging stringification to B::

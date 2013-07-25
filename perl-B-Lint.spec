@@ -1,13 +1,13 @@
 %define upstream_name    B-Lint
-%define upstream_version 1.12
+%define upstream_version 1.17
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	5
+Version:    %perl_convert_version 1.17
+Release:	1
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Adds debugging stringification to B::
-Source:     http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/B/B-Lint-1.17.tar.gz
 Url:        http://search.cpan.org/dist/%{upstream_name}
 BuildRoot:  %{_tmppath}/%{upstream_name}-%{upstream_version}
 BuildRequires: perl-devel
@@ -87,4 +87,5 @@ rm -rf %buildroot
 
 * Mon May 11 2009 cpan2dist 1.11-1mdv
 - initial mdv release, generated with cpan2dist
+
 

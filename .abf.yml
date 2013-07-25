@@ -1,2 +1,4 @@
+removed_sources:
+  B-Lint-1.12.tar.gz: af55d7a07fa46c1f1fc701495462e61b9024b8ea
 sources:
-  "B-Lint-1.12.tar.gz": af55d7a07fa46c1f1fc701495462e61b9024b8ea
+  B-Lint-1.17.tar.gz: b81fb7aab017924bbd6a48813144be9bb0f22fc9

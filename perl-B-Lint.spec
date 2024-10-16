@@ -8,7 +8,7 @@ License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Adds debugging stringification to B::
 Source:     http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 BuildRoot:  %{_tmppath}/%{upstream_name}-%{upstream_version}
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Pluggable)

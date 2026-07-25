@@ -1,14 +1,14 @@
 %define upstream_name    B-Lint
-%define upstream_version 1.12
+%define upstream_version 1.20
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	7
+Version:    %{upstream_version}
+Release:	1
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Adds debugging stringification to B::
-Source:     http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
-Url:        https://search.cpan.org/dist/%{upstream_name}
+Source:     https://cpan.metacpan.org/authors/id/R/RJ/RJBS/B-Lint-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/B-Lint
 BuildRoot:  %{_tmppath}/%{upstream_name}-%{upstream_version}
 BuildRequires:	make
 BuildRequires: perl-devel

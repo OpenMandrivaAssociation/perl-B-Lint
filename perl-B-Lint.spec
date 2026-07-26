@@ -1,15 +1,13 @@
 %define upstream_name    B-Lint
-%define upstream_version 1.20
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    1.20
+Release:	2
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Adds debugging stringification to B::
-Source:     https://cpan.metacpan.org/authors/id/R/RJ/RJBS/B-Lint-%{upstream_version}.tar.gz
+Source:     https://cpan.metacpan.org/authors/id/R/RJ/RJBS/B-Lint-%{version}.tar.gz
 Url:        https://metacpan.org/dist/B-Lint
-BuildRoot:  %{_tmppath}/%{upstream_name}-%{upstream_version}
+BuildRoot:  %{_tmppath}/%{upstream_name}-%{version}
 BuildRequires:	make
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Pluggable)
@@ -21,7 +19,7 @@ of *perl*. It is named after the program _lint_ which carries out a similar
 process for C programs.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -74,7 +72,7 @@ rm -rf %buildroot
 * Mon May 25 2009 Jérôme Quelin <jquelin@mandriva.org> 1.110.0-2mdv2010.0
 + Revision: 379620
 - removing noarch tag since module insists on installing in archlib
-- using %%perl_convert_version macro
+- using %1.20
 
 * Wed May 20 2009 Jérôme Quelin <jquelin@mandriva.org> 1.11-2mdv2010.0
 + Revision: 378037
